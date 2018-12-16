@@ -1,4 +1,4 @@
-# Sophia Blender Animation API #
+# Sophia Robot's Blender Animation API #
 
 This repository contains an animated model of the Sophia head, as a
 Blender file, as well as a Robot Operating System (ROS) node to control
