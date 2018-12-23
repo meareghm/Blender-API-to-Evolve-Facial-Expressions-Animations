@@ -45,7 +45,11 @@ revision.
 
 All animation sequences and 3D data are stored in the Blender file.
 
-## Guideline on How to Use the 3D Facial Animation Evolver through the Blender Interface. 
+## UI based Guideline on How to Use the 3D Facial Animation Evolver through the Blender Interface. 
+
+# Sample Screen Captures Some of the 3D Human-like Facial Expressions Animations Generated via the Interactive Genetic Algorithms API
+![Image of Dynamic Reconfigure](docs/IGA-based-Evolved-Expressions.png)
+
 
 The descrptions below highlight the included components and their respective UI in order to enable users/developers run experiments using the animation evolver tool's GUI.
  
