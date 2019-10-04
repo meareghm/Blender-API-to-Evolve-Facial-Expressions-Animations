@@ -19,33 +19,12 @@ Start blender as follows:
 blender -y Sophia.blend -P autostart.py
 ```
 Sophia can be controlled via buttons in the blender GUI (note the panel
-on the right).  A HOWTO guide for manipulating via ROS can be found in
-the [Eva
-cookbook](https://github.com/hansonrobotics/blender_api_msgs/blob/master/cookbook.md)
-in the `blender_api_msgs` project.
+on the right). 
 
-
-# Design #
-The programming API is currently in draft stage, here: 
-[API_v1](docs/API_v1.md). What has actually been implemented does not
-match the proposed API; neither is "authoritative", both probably need
-revision.
-
-![UML Diagram](docs/evaEmoDesign.png)
-
-* The ROS node listens to and acts on ROS messages.  It uses the
-  abstract base class `rigAPI` to communicate with blender.
-* Animation messages are queued with the `CommandSource.py` module.
-* The `CommandListener` listens to `CommandSource` messages; these
-  are `'rigAPI` messages.
-* The `command.py` module implements the `rigAPI`
-* The `AnimationManager` keeps track of of Eva's internal state.
-* The `Actuators` are responsible individual actions of Eva such as
-  breathing, blinking and eye movement.
 
 All animation sequences and 3D data are stored in the Blender file.
 
-## UI based Guideline on How to Use the 3D Facial Animation Evolver through the Blender Interface. 
+## How to Use the Blender API 3D Facial Animation Evolver GUI. 
 
 ### Sample Screen Captures Some of the 3D Human-like Facial Expressions Animations Generated via the Interactive Genetic Algorithms API
 ![Image of Dynamic Reconfigure](docs/IGA-based-Evolved-Expressions.png)
